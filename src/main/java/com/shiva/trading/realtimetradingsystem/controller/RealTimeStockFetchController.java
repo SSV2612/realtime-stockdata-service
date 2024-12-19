@@ -16,13 +16,6 @@ public class RealTimeStockFetchController {
     @Autowired
     private RealStockDataService realStockDataService;
 
-
-    /*
-    public String getPriceTicker(@PathVariable String ticker) {
-        return realrealtimetradingsystem.getRealStockPrice(ticker);
-    }
-    */
-
     @GetMapping("/price/{ticker}")
     public StockDataDTO getPriceTicker(@PathVariable String ticker){
         StockDataDTO stockdataDTO = realStockDataService.getRealStockData(ticker);
