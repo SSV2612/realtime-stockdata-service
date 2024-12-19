@@ -39,9 +39,9 @@ The above command:
 - Starts the Stock service container
 
 ### 3. Access the Application
-- You can either go to your browser and go to: http://localhost:8080/stock/ticker/<ticker-symbol>
+- You can either go to your browser and go to: http://localhost:8080/api/stocks/price/<ticker_symbol>
 - Replace the ticker symbol with any valid ticker to fetch the real time price for the same.
-- Example: http://localhost:8080/stock/ticker/AAPL
+- Example: http://localhost:8080/api/stocks/price/AAPL
 - This can also be tested using Postman.
 
 ### 4. To stop the application
